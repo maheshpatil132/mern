@@ -109,12 +109,7 @@ html{
   outline-color: skyblue;
   letter-spacing: .1rem;
 }
-.error{
-    color: red;
-    font-size: 1rem;
-    position: relative;
-    top: 2rem;
-}
+
 .form_container .otp_form button{
     padding: 1rem 2rem;
     width: 100%;
