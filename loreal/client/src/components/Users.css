@@ -1,0 +1,234 @@
+*{box-sizing:border-box;
+    padding:0;
+    margin:0;
+  }
+    body{
+      background-color:#fff;
+    }
+   
+   /* Set a style for the submit/login button */
+  
+    .btn-modal {
+      align-items:right;
+      float:right;
+      margin-top:-15px;
+      
+  }
+  
+  .modal, .overlay {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+  }
+  
+  .overlay {
+      background: rgba(49,49,49,0.8);
+  }
+  .modal-content {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1.4;
+      background: #f1f1f1;
+      padding: 14px 28px;
+      border-radius: 3px;
+      max-width: 600px;
+      min-width: 300px;
+  }
+  
+  .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 7px;
+  }
+    .main-container
+  {
+    max-width:500px;
+    width:100%;
+    margin:auto;
+    padding:20px;
+    background:#fff;
+    box-shadow:1px 1px 2px rgba(0,0,0,0.125);
+    height:500px;
+    margin-top:100px;
+    border-radius:15px;
+    background-color:white;
+    overflow-y:hidden;
+    overflow-x: hidden;
+  }
+  h1{
+    text-align:center;
+    font-size:50px;
+    color:#fff;
+  }
+  .wrap{
+    display:flex;}
+  
+    .form-group{
+       margin-top:40px;
+       margin-left:70px;
+       width:300px;
+    }
+  input{
+    padding:10px;
+    width:350px;
+    margin-left:20px;
+    margin-top:40px;
+    border:2px solid black;
+    border-radius:8px;
+    font-size:20px;
+    text-align:center;
+  }
+  .grid
+  {
+    display:grid;
+    background-color:burlywood;
+    grid-template-rows:repeat(2,max-content);
+    margin-top:20px;
+    grid-column-gap:20px;
+    width:350px;
+    margin-left:30px;
+    overflow-x:auto;
+    font-size:20px;
+    padding:10px;
+    border:2px solid black;
+    justify-content: center;
+    text-align: justify;
+    
+  }
+  .formcon{
+      border-radius:15px;
+      border-width: 5px;
+      border-color: black;
+      margin-left:5px;
+  }
+  .btn1{
+    font-size:20px;
+    padding:5px;
+    width:200px;
+    background-color: #3f51f9;
+
+    color:white;
+    border-radius:15px;
+    margin-top:40px;
+    margin-left:20px;
+  }
+  .btn1:hover{
+    background-color: #3f51b5;
+  }
+  .form-control{
+    border-radius:15px;
+    border-width:2px;
+    border-color:black;
+  }
+
+
+  .input_field{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: .1px solid black;
+   outline: none;
+  }
+  @media only screen and (max-width: 510px)
+{
+  .App
+  {
+    max-width:400px;
+    margin-top:70px;
+}
+.form-group{
+  margin-top:40px;
+  margin-left:-20px;
+  width:300px;
+}
+  input{
+    margin-left:20px;
+  }
+  .grid
+  {
+    
+    margin-left:20px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px)
+{
+  .App
+  {
+    max-width:350px;
+    margin-top:50px;
+    width:100%;
+}
+.form-group{
+  margin-top:40px;
+  margin-left:30px;
+  width:200px;
+}
+
+  input{
+    margin-left:10px;
+    width:260px;
+    padding:10px;
+  }
+  .grid
+  {
+    
+    margin-left:10px;
+    width:300px;
+    padding:10px
+  }
+  
+}
+@media only screen and (max-width: 350px)
+{
+  .App
+  {
+    max-width:300px;
+    width:100%;
+}
+
+  input{
+    margin-left:0px;
+    width:220px;
+    padding:5px;
+  }
+  .grid
+  {
+    
+    margin-left:0px;
+    width:250px;
+    padding:5px
+  }
+  
+}
+
+@media only screen and (max-width: 300px)
+{
+  .App
+  {
+    max-width:250px;
+    width:100%;
+}
+
+  input{
+    margin-left:-10px;
+    width:200px;
+  }
+  .grid
+  {
+    
+    margin-left:-10px;
+    width:240px;
+    padding:5px
+  }
+  
+}
+  

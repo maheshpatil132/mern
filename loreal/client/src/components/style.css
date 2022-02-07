@@ -1,0 +1,214 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+    color: black;
+    text-decoration: none !important;
+    text-transform: capitalize !important; 
+}
+
+html{
+    font-size: 65.5%;
+}
+.login{
+    height: 100vh;
+    width: 100vw;
+    padding: 1% 0;
+}
+.login .start_btn{
+    padding: .6rem 1.9rem;
+    background-color: blue;
+    color: white;
+    border: .01rem solid grey;
+    font-size: 1.4rem;
+    border-radius: .4rem;
+}
+.login .start_btn:hover{
+    background-color: rgb(60, 60, 255);
+}
+
+.form_container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 450px;
+    height: 520px;
+    border: .01rem solid whitesmoke;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 100vh rgba(49,49,49,0.8);
+    background-color: white;
+    z-index: 1000;
+}
+
+.form_container .close_btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.9rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.form_container .back{
+    position: absolute;
+    top: -.6rem;
+    left: 1.5rem;
+    font-weight: lighter;
+    cursor: pointer;
+    font-size: 4rem;
+    color: rgb(68, 67, 67);
+}
+.form_container .heading{
+    color: black;
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+.form_container .input_layer{
+    display: flex;
+    padding: 1.3rem .6rem;
+    background-color:#eeeeee ;
+    border-radius: .6rem;
+}
+.form_container .login_img{
+    height: 10rem;
+}
+.form_container .sign{
+    font-size: 2rem;
+    align-items: center;
+    border-right: .01rem solid grey;
+    padding: 0 .7rem;
+    font-weight: 650;
+}
+.form_container .otp_form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .2rem;
+    margin-bottom: 1.4rem;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+.form_container .otp_form input{
+  text-align: left;
+  background: transparent;
+  padding: .3rem 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: none;
+  height: 100%;
+  border-radius: 0;
+  margin: auto 0;
+  width: 100%;
+  outline: none;
+  outline-color: skyblue;
+  letter-spacing: .1rem;
+}
+.error{
+    color: red;
+    font-size: 1rem;
+    position: relative;
+    top: 2rem;
+}
+.form_container .otp_form button{
+    padding: 1rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: .6rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    background-color: #443eff;
+    color: white;
+    font-weight: bold;
+}
+.type_form{
+    position: relative;
+
+}
+.resend{
+    position: absolute;
+    top: -32%;
+    right: .2rem;
+    font-size: 1.5rem;
+    color: blue;
+
+}
+
+.otp_container{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 1.4rem;
+    justify-content: space-between;
+} 
+.otp_container .otp_box{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .4rem;
+    padding: 0;
+    margin: auto 0;
+    border: .1rem solid black;
+    font-size: 1.5rem;
+    outline-color: skyblue;
+}
+ .type_form .verify_btn{
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: .6rem;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.type_form{
+    margin: 2rem 0;
+}
+
+
+@media (max-width:470px) {
+     .form_container{
+        width:95%;
+    }
+}
+
+@media (max-width:374px) {
+    html{
+        font-size:57% ;
+    }
+    .form_container{
+        width: 100%;
+        padding: 1rem .4rem;
+        height: 500px;
+    }
+}
+@media (max-width:358px) {
+    .otp_container{
+        gap: 1.1rem;
+    }
+}
+
+@media (max-width:400px) {
+      html{
+          font-size: 60%;
+      }
+}
+@media (max-width:300px) {
+     .otp_container{
+         gap: 0;
+         justify-content: space-between;
+     }
+     .type_form{
+         width: 100%;
+     }
+     html{
+         font-size: 55%;
+     }
+}
