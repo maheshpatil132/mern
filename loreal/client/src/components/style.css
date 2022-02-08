@@ -85,6 +85,7 @@ html{
     border-right: .01rem solid grey;
     padding: 0 .7rem;
     font-weight: 650;
+    color: black;
 }
 .form_container .otp_form{
     display: flex;
@@ -108,12 +109,6 @@ html{
   outline: none;
   outline-color: skyblue;
   letter-spacing: .1rem;
-}
-.error{
-    color: red;
-    font-size: 1rem;
-    position: relative;
-    top: 2rem;
 }
 .form_container .otp_form button{
     padding: 1rem 2rem;
@@ -171,6 +166,24 @@ html{
 .type_form{
     margin: 2rem 0;
 }
+
+
+/* some the dynamic changing in css part is start from here */
+
+ /* 1.  input_layer dynamic change start */
+
+  .form_container .input_layer_option{
+    border: .01rem solid green;
+    box-shadow: 0 0 0 .001rem green;
+ }
+
+  .sign_style{
+      color: #7a7a7a !important;
+  }
+
+
+
+
 
 
 @media (max-width:470px) {
